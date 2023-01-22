@@ -1,13 +1,12 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Post, Category
+from django.shortcuts import render
 
-# Create your views here.
-def blog(request):
-    posts = Post.objects.all()
-    return render(request, "app_empresa/blog.html", {'posts': posts })
+# Create your views here
 
-def category(request,category_id):
-    category = get_object_or_404(Category, id = category_id)
-    return render(request, "app_empresa/category.html", {'category': category})
+def home(request):
+    return render(request, 'core/home.html')
 
+def about(request):
+    return render(request, 'core/about.html')
 
+def store(request):
+    return render(request, 'core/store.html')
