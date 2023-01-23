@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AppEmpresaConfig(AppConfig):
+class ContactConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'app_empresa'
+    name = 'contact'
